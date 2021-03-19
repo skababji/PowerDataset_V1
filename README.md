@@ -67,10 +67,12 @@ Set the measurement you need to include in your target dataset to **TRUE**. Save
 5) Open **generate_load_scenarios** notebook.
 6) Select the base power grid. This should match the one used to generate the measurement template e.g. **net=nw.case118()**
 7) Enter your parameters and run the notebook. The notebook will construct a timestamped run folder with three subfolders, namely **base_net, datasets, and grid**.
-Check the gnerated datastes under the subfolder ***datasets***. Other subfolders contain useful
+Check the generated datastes under the subfolder ***datasets***. Other subfolders contain useful
 infromation about the grid, e.g. buses, lines..etc. 
 
 Please note that you will find useful comments embedded in the code.
+
+***Please note that all units of measurment are inline with Pandapower except the angles where they are given in radians instead of degrees.***
 
 ### Contact
 For any queries, please contact Samer Kababji at  <skababji@gmail.com>
