@@ -1,0 +1,11 @@
+name: psse_env
+channels:
+  - peterjc123
+  - defaults
+dependencies:
+  - pip
+  - jupyter
+  - matplotlib
+  - pygit2
+  - numba
+prefix: D:\Anaconda3\envs\psse_env
