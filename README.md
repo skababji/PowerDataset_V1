@@ -42,7 +42,9 @@ xxxxxx
 3) Activate psse_env  using:
 ***conda activate psse_env***
 4) Install panda power from terminal using (This will take time!):
-***pip install git+https://github.com/skababji/pandapower.git@develop#egg=pandapower ***
+
+***pip install git+https://github.com/skababji/pandapower.git@develop#egg=pandapower***
+
 4) Run jupyter notebook from the terminal
 
 ### Structure
@@ -60,7 +62,7 @@ You may need to manually create 'runs' folder if not available
 1) Open **generate_meas_template** notebook.
 2) Select a power grid e.g. Enter **net=nw.case118()**. Note: This tool is tested only for IEEE118.
 3) Run the notebook.
-4) Go to **../runs/meas_template.csv**. The file lists all available measurements in the selected grid.
+4) Go to and open **../runs/meas_template.csv**. The file lists all available measurements in the selected grid.
 Set the measurement you need to include in your target dataset to **TRUE**. Save the file and close it.
 5) Open **generate_load_scenarios** notebook.
 6) Select the base power grid. This should match the one used to generate the measurement template e.g. **net=nw.case118()**
