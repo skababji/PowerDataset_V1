@@ -74,5 +74,28 @@ Please note that you will find useful comments embedded in the code.
 
 ***Please note that all units of measurment are inline with Pandapower except the angles where they are given in radians instead of degrees.***
 
+### Q&A
+1) It is mentioned in the readme document that "qfl45_35_33 is the reactive power flowing in a transmission line from bus 35 to bus 33.". What's the meaning of 45 here, is it the line number?   
+It is the transmission line index used by panda power. The same applies to the rest of quantities. For instance, pft1_25_24 refers to active power flow  from bus 25 to bus 24 in the transformer with panda power index 1. I used the following naming convention:   
+Pf: for active power flow  
+qf: for reactive power flow  
+p: for active power injection  
+q: for reactive power injection  
+l: for transmission line  
+t: for transformer  
+vm: is bus  voltage magnitude in pu  
+va :is bus voltage angle in radians  
+
+2) In the csv data, what is the scenario number? Can I think they are the independent measurement at different time points?   
+Yes, for sure. Load scenarios can be thought of as snapshots in time.   
+
+3) Each scenario (e.g.,A0) is copied 10 (or any number) times in the clean dataset, I think your purpose is for later use to add 10 different noises. Is it correct?   
+Yes, correct.   
+
+4) I noticed there are three H matrices under the 'base_net' repository, which one should be used in DC power flow model?   
+You need to use h_no_slack.csv. The first row in the file shows the bus indices.
+
+
+
 ### Contact
 For any queries, please contact Samer Kababji at  <skababji@gmail.com>
