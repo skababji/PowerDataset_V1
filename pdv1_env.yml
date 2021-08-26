@@ -1,11 +1,12 @@
-name: psse_env
+name: pdv1_env
 channels:
   - peterjc123
   - defaults
+  - conda-forge
 dependencies:
   - pip
   - jupyter
   - matplotlib
   - pygit2
   - numba
-prefix: D:\Anaconda3\envs\psse_env
+prefix: D:\Anaconda3\envs\pdv1_env
