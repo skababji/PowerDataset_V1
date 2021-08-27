@@ -6,6 +6,7 @@
 This tool assists researchers to export electrical quantities such as
 power flows, injections and others to featured datasets that can be used
 in data-driven modelling such as neural networks.  
+
 Using Pandapower <http://www.pandapower.org/>, the electrical quantities
 are first imported from a test power grid such as IEEE-118. Loads in the
 power grid are then varied and power flow analysis is conducted for each
@@ -13,6 +14,7 @@ power grid are then varied and power flow analysis is conducted for each
 headers that fully describe the electrical quantities. For instance,
 qfl45_35_33 is the reactive power flowing in a transmission line from
 bus 35 to bus 33.  
+
 Since this code was developed as part of research related to Power State
 Estimation, states are generated in a separate file. However, all
 quantities are linked with an ID indicating the corresponding load
@@ -23,7 +25,8 @@ target_gt_states.csv**) are all found in the subfolder **datasets**.
 The underlying functions are all defined in the python script file
 **gen_scen_fnctns.py**. The loads are varied using a uniform
 distribution. If needed, the function **gen_clean_scen_unfrm** may be
-easily modified to allow for other projected load patterns.  
+easily modified to allow for other projected load patterns. 
+
 The tool further generates the **DC measurement matrix H** sorted in the
 same order of the selected measurements. Clearly, the H matrix does not
 include entries for voltage magnitudes (all 1 p.u. for DC model
