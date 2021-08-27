@@ -124,11 +124,11 @@ are given in radians instead of degrees.
 3.  **Q:** Each scenario (e.g.,A0) is copied 10 (or any number) times in
     the clean dataset, I think your purpose is for later use to add 10
     different noises. Is it correct?  
-    **A:**Yes, correct.
+    **A:** Yes, correct.
 
 4.  **Q:** I noticed there are three H matrices under the ’base_net’
     repository, which one should be used in DC power flow model?  
-    **A:**You need to use h_no_slack.csv. The first row in the file
+    **A:** You need to use h_no_slack.csv. The first row in the file
     shows the bus indices.
 
 ## Contact
