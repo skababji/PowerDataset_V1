@@ -131,7 +131,7 @@ are given in radians instead of degrees.
     **A:**You need to use h_no_slack.csv. The first row in the file
     shows the bus indices.
 
-# Contact
+## Contact
 
 For any queries, please contact Samer Kababji at
 [skababji@gmail.com](skababji@gmail.com)
