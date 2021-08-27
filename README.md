@@ -1,8 +1,7 @@
----
-title: Generating electrical power datasets for data-driven modelling
----
+# Generating electrical power datasets for data-driven modelling
 
-# Description
+
+## Description
 
 This tool assists researchers to export electrical quantities such as
 power flows, injections and others to featured datasets that can be used
@@ -31,7 +30,7 @@ include entries for voltage magnitudes (all 1 p.u. for DC model
 assumptions). This matrix can be found under the subfolder **base_net**.
 Note: The H matrix is tested only for IEEE-118 case.  
 
-# Installation
+## Installation
 
 1.  Install conda
     <https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html>
@@ -47,7 +46,7 @@ Note: The H matrix is tested only for IEEE-118 case.
 
 5.  Run jupyter notebook from the terminal
 
-# Structure
+## Structure
 
 Please make sure you have the following main folders in your project:
 
@@ -59,7 +58,7 @@ Please make sure you have the following main folders in your project:
 
 You may need to manually create ’runs’ folder if not available
 
-# Use
+## Use
 
 1.  Open **generate_meas_template** notebook.
 
@@ -91,7 +90,7 @@ Note that you will find useful comments embedded in the code. All units
 of measurement are inline with Pandapower except the angles where they
 are given in radians instead of degrees.
 
-# Q&A
+## Q&A
 
 1.  **Q:** It is mentioned in the readme document that "qfl45_35_33 is
     the reactive power flowing in a transmission line from bus 35 to bus
